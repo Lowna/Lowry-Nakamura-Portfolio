@@ -7,7 +7,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>About | Lowry Nakamura UI Designer Sacramento&#44; CA</title>
+    <title>Contact | Lowry Nakamura UI Designer Sacramento&#44; CA</title>
     <meta name="author" content="LowryNakamura" />
     <meta name="description" content="portfolio" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,6 +20,24 @@
       crossorigin="anonymous"
     />
   </head>
+  <header>
+    <div>
+      <!-- logo goes here -->
+      <picture>
+        <source srcset="img/logo.png" media="(max-width:767px)" />
+        <img src="img/logo@2x.png" alt="Logo" />
+      </picture>
+      <!-- site navigation -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- begin main content -->
   <body>
     <!--[if lt IE 7]>
       <p class="browsehappy">
@@ -29,67 +47,57 @@
     <![endif]-->
     <!-- begin home page content -->
     <!-- header -->
-    <header>
-      <div>
-        <!-- logo goes here -->
-        <picture>
-          <source srcset="img/logo.png" media="(max-width:767px)" />
-          <img src="img/logo@2x.png" alt="Logo" />
-        </picture>
-        <!-- site navigation -->
-        <nav>
-          <ul>
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <!-- begin main content -->
     <main>
-      <!-- banner/hero goes here -->
       <div>
-        <h1>About</h1>
-        <picture>
-          <source srcset="img/profile-pic.jpg" media="(max-width:767px)" />
-          <img src="img/profile-pic@2x.jpg" alt="Self Protrait" />
-        </picture>
+        <h1>Let's Chat</h1>
+        <p>
+          Please fill out the info below and send me a brief message. I look
+          forward to speaking with you.
+        </p>
       </div>
-      <!-- end banner/hero -->
-      <!-- bio -->
-      <section>
-        <h2>Bio</h2>
-        <p>
-          Lowry Nakamura is a UI Designer and photographer who lives and works
-          in Sacramento, CA
-        </p>
-        <p>
-          On his free time, you can find Lowry reading, creating art, brewing
-          beers, wines and ciders as well as cooking with his wife Jessica.
-        </p>
-        <a href="files/resume.pdf" download>download resume</a>
-      </section>
-      <!-- skills -->
       <div>
-        <section>
-          <h3>Skills</h3>
-          <ul>
-            <li>design & layout</li>
-            <li>typography & color theory</li>
-            <li>develop wireframes (low, mid, high)</li>
-            <li>coding (html, css & javascript)</li>
-          </ul>
-        </section>
-        <!-- tools used -->
-        <section>
-          <h3>Tools Used</h3>
-          <ul>
-            <li>adobe suite</li>
-            <li>invision</li>
-            <li>frontend development</li>
-          </ul>
-        </section>
+        <form action="">
+          <label for="name">Your Name</label>
+          <br />
+          <input
+            name="name"
+            type="text"
+            id="formName"
+            class="form-input"
+            placeholder="Name (required)"
+            required
+          />
+          <br />
+          <label for="email">Your Email</label>
+          <br />
+          <input
+            name="email"
+            type="text"
+            id="formEmail"
+            class="form-input"
+            placeholder="Email (required)"
+            required
+          />
+          <br />
+          <label for="subject">Subject</label>
+          <br />
+          <input
+            name="subject"
+            type="text"
+            id="formSubject"
+            class="form-subject"
+            placeholder="Subject"
+          />
+          <br />
+          <br />
+          <textarea
+            name="text"
+            class="form-text"
+            placeholder="Type your message here..."
+          ></textarea>
+          <br />
+          <input type="submit" value="Submit" />
+        </form>
       </div>
     </main>
     <!-- end main content -->
