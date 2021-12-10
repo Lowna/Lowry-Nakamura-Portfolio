@@ -25,26 +25,14 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Permanent+Marker"
+    />
   </head>
-  <header>
-    <div>
-      <!-- logo goes here -->
-      <picture>
-        <source srcset="img/logo.png" media="(max-width:767px)" />
-        <img src="img/logo@2x.png" alt="Logo" />
-      </picture>
-      <!-- site navigation -->
-      <nav>
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
   <!-- begin main content -->
-  <body>
+  <body id="contact">
     <!--[if lt IE 7]>
       <p class="browsehappy">
         You are using an <strong>outdated</strong> browser. Please
@@ -53,77 +41,106 @@
     <![endif]-->
     <!-- begin home page content -->
     <!-- header -->
-    <main>
+    <header>
       <div>
-        <h1>Let's Chat</h1>
-        <p>
-          Please fill out the info below and send me a brief message. I look
-          forward to speaking with you.
-        </p>
+        <!-- logo goes here -->
+        <picture>
+          <source srcset="img/logo.png" media="(max-width:767px)" />
+          <img src="img/logo@2x.png" alt="Logo" />
+        </picture>
+        <!-- site navigation -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <div>
-        <form action="">
-          <label for="name">Your Name</label>
-          <br />
-          <input
-            name="name"
-            type="text"
-            id="formName"
-            class="form-input"
-            placeholder="Name (required)"
-            required
-          />
-          <br />
-          <label for="email">Your Email</label>
-          <br />
-          <input
-            name="email"
-            type="text"
-            id="formEmail"
-            class="form-input"
-            placeholder="Email (required)"
-            required
-          />
-          <br />
-          <label for="subject">Subject</label>
-          <br />
-          <input
-            name="subject"
-            type="text"
-            id="formSubject"
-            class="form-subject"
-            placeholder="Subject"
-          />
-          <br />
-          <br />
-          <textarea
-            name="text"
-            class="form-text"
-            placeholder="Type your message here..."
-          ></textarea>
-          <br />
-          <input type="submit" value="Submit" />
-        </form>
+    </header>
+    <main>
+      <div class="container">
+        <div>
+          <h1>Let's Chat</h1>
+          <p>
+            Please fill out the info below and send me a brief message. I look
+            forward to speaking with you.
+          </p>
+        </div>
+        <div id="form">
+          <form action="">
+            <label for="name">Your Name</label>
+            <br />
+            <input
+              name="name"
+              type="text"
+              id="formName"
+              class="form-input"
+              placeholder="Name (required)"
+              required
+            />
+            <br />
+            <label for="email">Your Email</label>
+            <br />
+            <input
+              name="email"
+              type="text"
+              id="formEmail"
+              class="form-input"
+              placeholder="Email (required)"
+              required
+            />
+            <br />
+            <label for="subject">Subject</label>
+            <br />
+            <input
+              name="subject"
+              type="text"
+              id="formSubject"
+              class="form-subject"
+              placeholder="Subject"
+            />
+            <br />
+            <br />
+            <textarea
+              name="text"
+              class="form-text"
+              placeholder="Type your message here..."
+            ></textarea>
+            <br />
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
       </div>
     </main>
     <!-- end main content -->
-
     <!-- begin footer -->
     <footer>
       <h2>Let&apos;s Chat</h2>
       <div>
-        <a href="contact.html">send email</a>
+        <a href="contact.html" class="email-btn">send email</a>
       </div>
       <!-- social icons -->
       <div>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/in/lowrynakamura/" class="social-link"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a href="https://www.instagram.com/" class="social-link"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://www.facebook.com/lowry.nakamura" class="social-link"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="https://lowrynakamuraphoto.com/" class="social-link"
+          ><i class="fal fa-camera-retro"></i
+        ></a>
       </div>
       <div>
         <p>&copy; Lowry Nakamura 2021</p>
       </div>
     </footer>
+    <script src="js/app.js" async defer></script>
+    <!-- end footer -->
     <script src="js/app.js" async defer></script>
     <!-- end footer -->
     <!-- end page content -->

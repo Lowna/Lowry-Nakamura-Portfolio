@@ -25,8 +25,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Permanent+Marker"
+    />
   </head>
-  <body>
+  <body id="musicApp">
     <!--[if lt IE 7]>
       <p class="browsehappy">
         You are using an <strong>outdated</strong> browser. Please
@@ -55,7 +60,7 @@
     <!-- begin main content -->
     <main>
       <!-- banner/hero goes here -->
-      <div>
+      <div id="bannerMusicApp">
         <h1>FM / AM</h1>
         <picture>
           <source
@@ -73,77 +78,103 @@
         </p>
       </div>
       <!-- end banner/hero -->
-      <h2>Process</h2>
-      <p>
-        I began drawing out my low fidelity prototypes in order to gauge what
-        was working for me. After a few renditions I decided that this sketch
-        was to be the beginning for the app.
-      </p>
-      <picture>
-        <source
-          srcset="img/80s-music-app/lo-fi_wireframes.png"
-          media="(max-width:767px)"
-        />
-        <img
-          src="img/80s-music-app/lo-fi_wireframes@2x.png"
-          alt="Lo Fi wireframes for 1980s music app."
-        />
-      </picture>
-      <p>
-        Once I was satisfied with my initial drawings I began to digitize my
-        wireframes and add icons. Aligning everything to a set grid was
-        essential in making sure my app screens would work with the final
-        design.
-      </p>
-      <picture>
-        <source
-          srcset="img/80s-music-app/mid-fi_wireframes.png"
-          media="(max-width:767px)"
-        />
-        <img
-          src="img/80s-music-app/mid-fi_wireframes@2x.png"
-          alt="Mid Fi wireframes for 1980s music app."
-        />
-      </picture>
-      <br />
-      <picture>
-        <source srcset="img/80s-music-app/mood.png" media="(max-width:767px)" />
-        <img
-          src="img/80s-music-app/mood@2x.png"
-          alt="Moodboard for 1980s music app."
-        />
-      </picture>
-      <p>
-        Here is the final product for my 1980s music app. With a few changes I
-        decided to create a model so the user could more easily filter and
-        customize their playlists.
-      </p>
-      <p>
-        The design is a play off my concept of the contrast between the
-        futuristic feel and playfulness of pop culture of the 1980s. I am really
-        proud of how my app turned out. The user will be happy using the app
-        with its super easy to use ui as well as being immersed with 1980s
-      </p>
-      <p><strong>totally rad feel!</strong></p>
+      <div class="container">
+        <h2>Process</h2>
+        <p>
+          I began drawing out my low fidelity prototypes in order to gauge what
+          was working for me. After a few renditions I decided that this sketch
+          was to be the beginning for the app.
+        </p>
+        <picture>
+          <source
+            srcset="img/80s-music-app/lo-fi_wireframes.png"
+            media="(max-width:767px)"
+          />
+          <img
+            src="img/80s-music-app/lo-fi_wireframes@2x.png"
+            alt="Lo Fi wireframes for 1980s music app."
+          />
+        </picture>
+        <p>
+          Once I was satisfied with my initial drawings I began to digitize my
+          wireframes and add icons. Aligning everything to a set grid was
+          essential in making sure my app screens would work with the final
+          design.
+        </p>
+        <picture>
+          <source
+            srcset="img/80s-music-app/mid-fi_wireframes.png"
+            media="(max-width:767px)"
+          />
+          <img
+            src="img/80s-music-app/mid-fi_wireframes@2x.png"
+            alt="Mid Fi wireframes for 1980s music app."
+          />
+        </picture>
+        <br />
+        <picture>
+          <source
+            srcset="img/80s-music-app/mood.png"
+            media="(max-width:767px)"
+          />
+          <img
+            src="img/80s-music-app/mood@2x.png"
+            alt="Moodboard for 1980s music app."
+          />
+        </picture>
+        <p>
+          Here is the final product for my 1980s music app. With a few changes I
+          decided to create a model so the user could more easily filter and
+          customize their playlists.
+        </p>
+        <p>
+          The design is a play off my concept of the contrast between the
+          futuristic feel and playfulness of pop culture of the 1980s. I am
+          really proud of how my app turned out. The user will be happy using
+          the app with its super easy to use ui as well as being immersed with
+          1980s
+        </p>
+        <p id="rad"><strong>totally rad feel!</strong></p>
+        <picture>
+          <source
+            srcset="img/80s-music-app/final-screens.png"
+            media="(max-width:767px)"
+          />
+          <img
+            src="img/80s-music-app/final-screens@2x.png"
+            alt="Final mobile for 1980s music app."
+          />
+        </picture>
+      </div>
     </main>
     <!-- end main content -->
-
     <!-- begin footer -->
     <footer>
       <h2>Let&apos;s Chat</h2>
       <div>
-        <a href="contact.html">send email</a>
+        <a href="contact.html" class="email-btn">send email</a>
       </div>
       <!-- social icons -->
       <div>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/in/lowrynakamura/" class="social-link"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a href="https://www.instagram.com/" class="social-link"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://www.facebook.com/lowry.nakamura" class="social-link"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="https://lowrynakamuraphoto.com/" class="social-link"
+          ><i class="fal fa-camera-retro"></i
+        ></a>
       </div>
       <div>
         <p>&copy; Lowry Nakamura 2021</p>
       </div>
     </footer>
+    <script src="js/app.js" async defer></script>
+    <!-- end footer -->
     <script src="js/app.js" async defer></script>
     <!-- end footer -->
     <!-- end page content -->

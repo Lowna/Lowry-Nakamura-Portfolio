@@ -1,0 +1,109 @@
+/*
+colors for my site
+primary 
+#000000
+#ffffff
+secondary
+#b4b4b4
+link
+#4381C1
+link hover
+#234261
+link active
+#E30004
+visited
+#4381C1
+*/
+
+/* start style sheet */
+/* zero out all margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* body */
+body {
+  background-color: #fffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #000000;
+}
+/* h1 - h6 */
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 1.45em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.35em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.25em;
+  font-weight: 500;
+}
+h4 {
+  font-size: 1.15em;
+  font-weight: 400;
+}
+#rad {
+  font-family: "Permanent Marker", sans-serif;
+  letter-spacing: 3px;
+}
+/* images */
+img {
+  width: 100%;
+}
+
+/* links */
+a,
+a:visited {
+  color: #4381c1;
+  text-decoration: none; /* No underlining */
+}
+a:hover,
+a:focus {
+  color: #234261;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:active {
+  /* selected link */
+  color: #ff2a02;
+}
+/* buttons and specific links */
+
+.email-btn,
+.email-btn:visited {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #000000;
+  border: #000000 2px solid;
+  padding: 5px;
+  margin-bottom: 5px;
+  transition: 0.2s opacity;
+}
+.email-btn:hover,
+.email-btn:active {
+  opacity: 0.8;
+}
+.project-link,
+.project-link:visited {
+  font-weight: 500;
+  font-style: italic;
+}
+.project-link:hover,
+.project-link:active {
+  color: #234261;
+  transition: 0.2s ease-in-out;
+}

@@ -25,8 +25,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Permanent+Marker"
+    />
   </head>
-  <body>
+  <body id="about">
     <!--[if lt IE 7]>
       <p class="browsehappy">
         You are using an <strong>outdated</strong> browser. Please
@@ -55,7 +60,7 @@
     <!-- begin main content -->
     <main>
       <!-- banner/hero goes here -->
-      <div>
+      <div id="aboutBanner">
         <h1>About</h1>
         <picture>
           <source srcset="img/profile-pic.jpg" media="(max-width:767px)" />
@@ -64,58 +69,72 @@
       </div>
       <!-- end banner/hero -->
       <!-- bio -->
-      <section>
-        <h2>Bio</h2>
-        <p>
-          Lowry Nakamura is a UI Designer and photographer who lives and works
-          in Sacramento, CA
-        </p>
-        <p>
-          On his free time, you can find Lowry reading, creating art, brewing
-          beers, wines and ciders as well as cooking with his wife Jessica.
-        </p>
-        <a href="files/resume.pdf" download>download resume</a>
-      </section>
-      <!-- skills -->
-      <div>
+      <div class="container">
         <section>
-          <h3>Skills</h3>
-          <ul>
-            <li>design & layout</li>
-            <li>typography & color theory</li>
-            <li>develop wireframes (low, mid, high)</li>
-            <li>coding (html, css & javascript)</li>
-          </ul>
+          <h2>Bio</h2>
+          <p>
+            Lowry Nakamura is a UI Designer and photographer who lives and works
+            in Sacramento, CA
+          </p>
+          <p>
+            On his free time, you can find Lowry reading, creating art, brewing
+            beers, wines and ciders as well as cooking with his wife Jessica.
+          </p>
+          <a href="files/resume.pdf" class="project-link" download
+            >download resume</a
+          >
         </section>
-        <!-- tools used -->
-        <section>
-          <h3>Tools Used</h3>
-          <ul>
-            <li>adobe suite</li>
-            <li>invision</li>
-            <li>frontend development</li>
-          </ul>
-        </section>
+        <!-- skills -->
+        <div>
+          <section>
+            <h3>Skills</h3>
+            <ul>
+              <li>design & layout</li>
+              <li>typography & color theory</li>
+              <li>develop wireframes (low, mid, high)</li>
+              <li>coding (html, css & javascript)</li>
+            </ul>
+          </section>
+          <!-- tools used -->
+          <section>
+            <h3>Tools Used</h3>
+            <ul>
+              <li>adobe suite</li>
+              <li>invision</li>
+              <li>frontend development</li>
+            </ul>
+          </section>
+        </div>
       </div>
     </main>
     <!-- end main content -->
-
     <!-- begin footer -->
     <footer>
       <h2>Let&apos;s Chat</h2>
       <div>
-        <a href="contact.html">send email</a>
+        <a href="contact.html" class="email-btn">send email</a>
       </div>
       <!-- social icons -->
       <div>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/in/lowrynakamura/" class="social-link"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a href="https://www.instagram.com/" class="social-link"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://www.facebook.com/lowry.nakamura" class="social-link"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="https://lowrynakamuraphoto.com/" class="social-link"
+          ><i class="fal fa-camera-retro"></i
+        ></a>
       </div>
       <div>
         <p>&copy; Lowry Nakamura 2021</p>
       </div>
     </footer>
+    <script src="js/app.js" async defer></script>
+    <!-- end footer -->
     <script src="js/app.js" async defer></script>
     <!-- end footer -->
     <!-- end page content -->
