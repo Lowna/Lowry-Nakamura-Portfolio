@@ -25,11 +25,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//fonts.googleapis.com/css?family=Permanent+Marker"
-    />
+    <link rel="stylesheet" href="https://use.typekit.net/iqe1dsk.css" />
   </head>
   <body id="about">
     <!--[if lt IE 7]>
@@ -41,14 +37,22 @@
     <!-- begin home page content -->
     <!-- header -->
     <header>
-      <div>
+      <div class="header-container">
         <!-- logo goes here -->
-        <picture>
-          <source srcset="img/logo.png" media="(max-width:767px)" />
-          <img src="img/logo@2x.png" alt="Logo" />
-        </picture>
+        <a id="homeLink" href="index.html">
+          <picture>
+            <source srcset="img/logo.png" media="(max-width:767px)" />
+            <img src="img/logo@2x.png" alt="Logo" />
+          </picture>
+        </a>
         <!-- site navigation -->
-        <nav>
+        <!-- hamburger icon for show hide nav btn -->
+        <div class="menu-icon">
+          <div id="showHide">
+            <p><i class="fal fa-bars hamburger"></i></p>
+          </div>
+        </div>
+        <nav id="siteNav">
           <ul>
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
@@ -57,6 +61,7 @@
         </nav>
       </div>
     </header>
+    <hr />
     <!-- begin main content -->
     <main>
       <!-- banner/hero goes here -->
@@ -67,6 +72,7 @@
           <img src="img/profile-pic@2x.jpg" alt="Self Protrait" />
         </picture>
       </div>
+      <hr />
       <!-- end banner/hero -->
       <!-- bio -->
       <div class="container">
@@ -74,7 +80,7 @@
           <h2>Bio</h2>
           <p>
             Lowry Nakamura is a UI Designer and photographer who lives and works
-            in Sacramento, CA
+            in Sacramento, CA.
           </p>
           <p>
             On his free time, you can find Lowry reading, creating art, brewing
@@ -85,7 +91,7 @@
           >
         </section>
         <!-- skills -->
-        <div>
+        <div class="skills">
           <section>
             <h3>Skills</h3>
             <ul>
@@ -110,27 +116,31 @@
     <!-- end main content -->
     <!-- begin footer -->
     <footer>
-      <h2>Let&apos;s Chat</h2>
-      <div>
-        <a href="contact.html" class="email-btn">send email</a>
-      </div>
-      <!-- social icons -->
-      <div>
-        <a href="https://www.linkedin.com/in/lowrynakamura/" class="social-link"
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
-        <a href="https://www.instagram.com/" class="social-link"
-          ><i class="fab fa-instagram"></i
-        ></a>
-        <a href="https://www.facebook.com/lowry.nakamura" class="social-link"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-        <a href="https://lowrynakamuraphoto.com/" class="social-link"
-          ><i class="fal fa-camera-retro"></i
-        ></a>
-      </div>
-      <div>
-        <p>&copy; Lowry Nakamura 2021</p>
+      <div class="footer-container">
+        <h2>Let&apos;s Chat</h2>
+        <div class="chat">
+          <a href="contact.html" class="email-btn">send email</a>
+        </div>
+        <!-- social icons -->
+        <div class="outside-links">
+          <a
+            href="https://www.linkedin.com/in/lowrynakamura/"
+            class="social-link"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="https://www.instagram.com/" class="social-link"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/lowry.nakamura" class="social-link"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://lowrynakamuraphoto.com/" class="social-link"
+            ><i class="fal fa-camera-retro"></i
+          ></a>
+        </div>
+        <div class="copy">
+          <p>&copy; Lowry Nakamura 2021</p>
+        </div>
       </div>
     </footer>
     <!-- end footer -->

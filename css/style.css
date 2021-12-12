@@ -16,12 +16,15 @@ visited
 */
 
 /* start style sheet */
+/**********************************************************************************************************************/
 /* zero out all margins and padding */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 /* body */
+/**********************************************************************************************************************/
 body {
   background-color: #fffff;
   font-family: "Montserrat", sans-serif;
@@ -30,7 +33,17 @@ body {
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #000000;
 }
+/* hrs */
+/**********************************************************************************************************************/
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
 /* h1 - h6 */
+/**********************************************************************************************************************/
+
 h1,
 h2,
 h3,
@@ -38,7 +51,7 @@ h4 {
   line-height: 1.4;
 }
 h1 {
-  font-size: 1.45em;
+  font-size: 1.45rem;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -82,14 +95,15 @@ a:active {
   color: #ff2a02;
 }
 /* buttons and specific links */
+/**********************************************************************************************************************/
 
 .email-btn,
 .email-btn:visited {
   display: inline-block;
-  background-color: #ffffff;
-  color: #000000;
-  border: #000000 2px solid;
-  padding: 5px;
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 5px 10px;
   margin-bottom: 5px;
   transition: 0.2s opacity;
 }
@@ -115,8 +129,8 @@ a:active {
   padding: 10px;
   text-transform: uppercase;
   text-decoration: none;
-  border: 2px transparent;
   border: none;
+  border: 2px transparent solid;
 }
 #btnSubmit:hover,
 #btnSubmit:active {
@@ -124,4 +138,226 @@ a:active {
   color: #000000;
   border: #000000 2px solid;
   transition: 0.5s ease-in-out;
+}
+/* header and nav */
+/**********************************************************************************************************************/
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+.header-container #homeLink picture {
+  flex-basis: 50%;
+  text-align: left;
+  align-self: center;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+.header-container #homeLink picture img {
+  width: 75%;
+}
+.header-container .menu-icon {
+  flex-basis: 20%;
+  align-self: center;
+  text-align: right;
+}
+.header-container .menu-icon #showHide p .hamburger {
+  color: #000000;
+  font-size: 2em;
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+/* site navigation */
+/**********************************************************************************************************************/
+.header-container nav {
+  flex-basis: 100%;
+  text-align: left;
+  margin-left: 25px;
+  display: none;
+}
+.header-container nav ul {
+  list-style-type: none;
+}
+.header-container nav ul li {
+  margin-bottom: 5px;
+}
+
+/* home hero banner */
+/**********************************************************************************************************************/
+
+#heroBanner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+#heroBanner picture {
+  text-align: center;
+  padding: 10px;
+}
+#heroBanner picture img {
+  width: 50%;
+  border-radius: 50%;
+  align-self: center;
+}
+#heroBanner .hero-text {
+  text-align: center;
+}
+#heroBanner .hero-text p {
+  padding: 10px;
+}
+/* container styling all pages */
+/**********************************************************************************************************************/
+.container {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+/* home page */
+/**********************************************************************************************************************/
+#home main .container h2 {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+#home main .container section,
+picture,
+h3,
+p,
+.project-link {
+  margin-bottom: 10px;
+}
+
+/**********************************************************************************************************************/
+/* portfolio pages */
+/**********************************************************************************************************************/
+
+/* project banner all project pages */
+/**********************************************************************************************************************/
+
+.project-banner {
+  margin: 25px;
+}
+.project-banner h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* cook */
+/**********************************************************************************************************************/
+#cookApp .container h2 {
+  margin-bottom: 10px;
+}
+#cookApp .container .user-needs-cook {
+  list-style-type: none;
+  margin-left: 10px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+/* about page */
+/**********************************************************************************************************************/
+main #aboutBanner {
+  margin: 30px 25px 30px 25px;
+}
+main #aboutBanner h1 {
+  text-align: center;
+  padding: 1em;
+}
+#about main .container section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+#about main .container section p,
+a {
+  margin-bottom: 10px;
+}
+#about main .container .skills {
+  margin-top: 25px;
+}
+#about main .container .skills ul {
+  list-style-type: none;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+/* contact page */
+/**********************************************************************************************************************/
+#contact main .container h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+#contact main .container p {
+  margin-bottom: 25px;
+}
+/* styling for form */
+#contact main .container #form form {
+  width: 100%;
+}
+#contact main .container #form form label {
+  text-transform: uppercase;
+}
+#contact main .container #form form input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+/* font-family set here for placeholder */
+#contact main .container #form form input::placeholder {
+  padding-left: 10px;
+  font-size: 1em;
+  color: #565656;
+  font-family: "Montserrat", sans-serif;
+}
+#contact main .container #form form textarea {
+  width: 100%;
+  margin-bottom: 5px;
+  margin-top: -10px;
+}
+#contact main .container #form form textarea::placeholder {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+/* footer */
+/**********************************************************************************************************************/
+footer {
+  background-color: #000000;
+}
+footer .footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+.footer-container {
+  padding: 2em 1em;
+}
+.footer-container h2,
+.chat,
+.outside-links,
+.copy {
+  margin-bottom: 10px;
+}
+.outside-links {
+  font-size: 1.5rem;
+}
+.footer-container .outside-links .social-links,
+.social-links:visited,
+i {
+  color: #ffffff;
+  margin-left: 5px;
+}
+.footer-container .outside-links .social-links:hover,
+.social-links:visited,
+i:hover,
+i:visited {
+  color: #e30004;
+  transition: 0.2s ease-in-out;
 }
