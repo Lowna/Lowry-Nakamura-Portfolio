@@ -23,9 +23,14 @@ visited
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  height: 100%;
+}
 /* body */
 /**********************************************************************************************************************/
 body {
+  min-height: 100%;
   background-color: #ffffff;
   font-family: "Montserrat", sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
@@ -165,19 +170,23 @@ a:active {
   align-self: center;
   text-align: right;
 }
+
+/* site navigation */
+/**********************************************************************************************************************/
+
 .header-container .menu-icon #showHide p .hamburger {
   color: #000000;
   font-size: 2em;
   margin-right: 25px;
   margin-bottom: 20px;
 }
-/* site navigation */
-/**********************************************************************************************************************/
 .header-container nav {
-  flex-basis: 100%;
   text-align: left;
   margin-left: 25px;
+  display: flex;
   display: none;
+  flex-basis: 100%;
+  flex-direction: column;
 }
 .header-container nav ul {
   list-style-type: none;
@@ -215,6 +224,8 @@ a:active {
 /* container styling all pages */
 /**********************************************************************************************************************/
 .container {
+  display: flex;
+  flex-direction: column;
   width: 90%;
   margin: 0 auto;
   margin-top: 25px;
@@ -243,10 +254,12 @@ p,
 /**********************************************************************************************************************/
 
 .project-banner {
-  margin: 25px;
+  margin: 0 auto;
+  width: 90%;
 }
 .project-banner h1 {
   text-align: center;
+  margin-top: 50px;
   margin-bottom: 10px;
 }
 
@@ -264,11 +277,25 @@ p,
 /* about page */
 /**********************************************************************************************************************/
 main #aboutBanner {
-  margin: 30px 25px 30px 25px;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 25px;
 }
 main #aboutBanner h1 {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+main #aboutBanner h1,
+picture {
   text-align: center;
-  padding: 1em;
+  display: block;
+}
+main #aboutBanner picture img {
+  width: 100%;
+}
+#about main .container {
+  display: flex;
+  flex-direction: column;
 }
 #about main .container section h2 {
   text-align: center;
@@ -288,16 +315,23 @@ a {
 }
 /* contact page */
 /**********************************************************************************************************************/
+#contact main .container {
+  display: flex;
+  flex-direction: column;
+}
 #contact main .container h1 {
   text-align: center;
+  margin-top: 50px;
   margin-bottom: 10px;
 }
 #contact main .container p {
+  text-align: left;
   margin-bottom: 25px;
 }
 /* styling for form */
 #contact main .container #form form {
   width: 100%;
+  text-align: left;
 }
 #contact main .container #form form label {
   text-transform: uppercase;
@@ -360,4 +394,191 @@ i:hover,
 i:visited {
   color: #e30004;
   transition: 0.2s ease-in-out;
+}
+
+/**********************************************************************************************************************/
+/* media queries */
+/**********************************************************************************************************************/
+
+/* medium devices */
+/**********************************************************************************************************************/
+@media only screen and (min-width: 768px) {
+  /* container styling all pages ~ medium devices*/
+  /**********************************************************************************************************************/
+  .container {
+    width: 80%;
+  }
+
+  /* home hero banner ~ medium devices*/
+  /**********************************************************************************************************************/
+
+  #heroBanner picture img {
+    width: 35%;
+  }
+  /* project banner all project pages ~ medium devices*/
+  /**********************************************************************************************************************/
+
+  .project-banner {
+    width: 80%;
+  }
+
+  /* header and nav ~ medium devices*/
+  /**********************************************************************************************************************/
+
+  .header-container #homeLink picture img {
+    width: 50%;
+  }
+  .header-container #homeLink picture {
+    margin-left: 50px;
+  }
+  .header-container .menu-icon {
+    margin-right: 50px;
+  }
+  /* about page ~ medium devices*/
+  /**********************************************************************************************************************/
+
+  main #aboutBanner {
+    width: 90%;
+  }
+  main #aboutBanner picture {
+    margin: auto;
+  }
+  main #aboutBanner picture img {
+    width: 90%;
+  }
+}
+/* large devices */
+/**********************************************************************************************************************/
+@media only screen and (min-width: 1024px) {
+  /* header and nav ~ large devices */
+  /**********************************************************************************************************************/
+
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+  }
+  .header-container #homeLink picture {
+    text-align: left;
+    align-self: left;
+  }
+  .header-container #homeLink picture img {
+    width: 45%;
+    margin-left: 30px;
+  }
+  .header-container .menu-icon {
+    flex-basis: 0%;
+  }
+  /* site navigation ~ large devices */
+  /**********************************************************************************************************************/
+
+  .header-container .menu-icon #showHide p .hamburger {
+    display: none;
+  }
+  .header-container nav {
+    text-align: right;
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: row;
+    margin-right: 50px;
+  }
+  .header-container nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: right;
+  }
+  .header-container nav ul li {
+    margin-bottom: 0;
+    margin-left: 15px;
+  }
+  /* home page ~ large devices */
+  /**********************************************************************************************************************/
+  #heroBanner picture img {
+    width: 20%;
+  }
+  #home main .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #home main .container h2 {
+    flex-basis: 100%;
+  }
+  #home main .container section {
+    flex-basis: 50%;
+    padding: 1em;
+  }
+  /* about page  ~ large devices */
+  /**********************************************************************************************************************/
+  main #aboutBanner picture img {
+    width: 80%;
+  }
+  #about main .container {
+    flex-direction: row;
+  }
+  #about main .container section {
+    order: 1;
+    flex-basis: 55%;
+    padding: 1em;
+  }
+  #about main .container section h2 {
+    text-align: left;
+  }
+  #about main .container section p {
+    margin-top: 20px;
+  }
+  #about main .container .skills {
+    order: 2;
+    flex-basis: 45%;
+  }
+
+  /* contact page ~ large devices */
+  /**********************************************************************************************************************/
+  #contact main .container {
+    flex-direction: row;
+  }
+  #contact main div {
+    flex-basis: 50%;
+    padding: 1em;
+  }
+  #contact main .container h1 {
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  #contact main form {
+    flex-basis: 50%;
+    padding: 1em;
+  }
+  /* footer ~ large devices */
+  /**********************************************************************************************************************/
+  footer {
+    height: 200px;
+  }
+  footer .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  footer .footer-container .chat,
+  .outside-links {
+    flex-basis: 50%;
+  }
+  footer .footer-container .chat {
+    padding: 1em;
+    flex-basis: 100%;
+  }
+  footer .footer-container .outside-links {
+    padding: 1em;
+    text-align: right;
+    order: 3;
+  }
+  footer .footer-container .copy {
+    flex-basis: 50%;
+    padding: 1em;
+    text-align: left;
+    order: 2;
+  }
 }
