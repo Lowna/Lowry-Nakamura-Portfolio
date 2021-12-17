@@ -258,6 +258,8 @@ p,
 /**********************************************************************************************************************/
 
 .project-banner {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   width: 90%;
 }
@@ -497,6 +499,25 @@ i:visited {
   .header-container nav ul li {
     margin-bottom: 0;
     margin-left: 15px;
+  }
+  /* project banner all project pages ~ large devices  */
+  /**********************************************************************************************************************/
+
+  .project-banner {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+  }
+  .project-banner h1 {
+    flex-basis: 100%;
+  }
+  .project-banner picture {
+    flex-basis: 70%;
+    padding: 0 2em;
+  }
+  .project-banner p {
+    flex-basis: 30%;
+    align-self: center;
   }
   /* home page ~ large devices */
   /**********************************************************************************************************************/
