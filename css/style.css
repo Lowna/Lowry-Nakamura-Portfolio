@@ -268,6 +268,24 @@ p,
   margin-top: 50px;
   margin-bottom: 10px;
 }
+/* styling for process */
+.process {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.process h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+/* project container all project pages */
+/**********************************************************************************************************************/
+.project-container {
+  display: flex;
+  flex-direction: column;
+}
 
 /* cook */
 /**********************************************************************************************************************/
@@ -427,7 +445,10 @@ i:visited {
   .project-banner {
     width: 80%;
   }
-
+  /* styling for process ~ medium devices */
+  .process {
+    width: 80%;
+  }
   /* header and nav ~ medium devices*/
   /**********************************************************************************************************************/
 
@@ -519,6 +540,212 @@ i:visited {
     flex-basis: 30%;
     align-self: center;
   }
+  /* project container all project pages ~ large devices */
+  /**********************************************************************************************************************/
+  .project-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  /* cook page ~ large devices */
+  /**********************************************************************************************************************/
+  .project-container #userResearchHighlight {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .project-container #userResearchHighlight h3 {
+    flex-basis: 100%;
+  }
+  .project-container #userResearchHighlight p {
+    flex-basis: 40%;
+    align-self: center;
+  }
+  .project-container #userResearchHighlight ul {
+    flex-basis: 50%;
+    padding: 1em;
+  }
+  .project-container #personaProfile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .project-container #personaProfile h3 {
+    flex-basis: 100%;
+  }
+  .project-container #personaProfile p {
+    flex-basis: 100%;
+    padding: 1em;
+  }
+  .project-container #personaProfile picture {
+    flex-basis: 50%;
+    padding: 1em;
+  }
+  .project-container #flowObjective {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .project-container #flowObjective picture {
+    flex-basis: 100%;
+    margin: 0;
+    padding: 2em;
+  }
+  .project-container #flowObjective #styleGuide picture {
+    flex-basis: 100%;
+    padding: 4em;
+  }
+  .project-container #cookAppProgression {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .project-container #cookAppProgression picture {
+    flex-basis: 50%;
+    padding: 1em;
+  }
+  .project-container #cookAppProgression #finalCookScreen {
+    flex-basis: 100%;
+    padding: 2e;
+  }
+  /* music app page ~ large devices */
+  /**********************************************************************************************************************/
+  .project-container #music1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .project-container #music1 p {
+    order: 3;
+    padding: 1em;
+  }
+  .project-container #music1 picture {
+    flex-basis: 50%;
+    padding-left: 1em;
+  }
+  .project-container #moodBoardMusic picture {
+    padding: 2em;
+  }
+  .project-container #musicFinalText {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .project-container #musicFinalText p {
+    flex-basis: 50%;
+    padding: 1em;
+  }
+  .project-container #musicFinalScreen picture {
+    padding: 2em;
+  }
+  /* museo page ~ large devices */
+  /**********************************************************************************************************************/
+  .project-container #museoFlowDiagram {
+    padding: 2em;
+  }
+  .project-container #drawingOutIdeas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .project-container #drawingOutIdeas h3 {
+    flex-basis: 100%;
+  }
+  .project-container #drawingOutIdeas p {
+    flex-basis: 40%;
+    align-self: center;
+    padding: 1em;
+  }
+  .project-container #drawingOutIdeas picture {
+    flex-basis: 60%;
+  }
+  .project-container #digitizeBothScreens {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .project-container #digitizeBothScreens h3 {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 25px;
+  }
+  .project-container #digitizeBothScreens p {
+    flex-basis: 100%;
+  }
+  .project-container #digitizeBothScreens picture {
+    flex-basis: 100%;
+    padding: 2em;
+  }
+  .project-container #figuringOutDifferences {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .project-container #figuringOutDifferences h3 {
+    flex-basis: 100%;
+  }
+  .project-container #figuringOutDifferences p {
+    flex-basis: 40%;
+    align-self: center;
+    padding: 1em;
+  }
+  .project-container #figuringOutDifferences picture {
+    flex-basis: 60%;
+  }
+  .project-container #whatWorks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .project-container #whatWorks h3 {
+    flex-basis: 100%;
+    text-align: right;
+    margin-right: 4.8em;
+  }
+  .project-container #whatWorks p {
+    flex-basis: 40%;
+    align-self: center;
+    padding: 1em;
+    order: 3;
+  }
+  .project-container #whatWorks picture {
+    flex-basis: 60%;
+  }
+  .project-container #finalScreensMuseo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+  .project-container #finalScreensMuseo h3 {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .project-container #finalScreensMuseo #MuseoScreens {
+    padding: 2em;
+  }
   /* home page ~ large devices */
   /**********************************************************************************************************************/
   #heroBanner picture img {
@@ -608,5 +835,19 @@ i:visited {
     padding: 1em;
     text-align: left;
     order: 2;
+  }
+  /* extra large devices ~ extra large devices */
+  /**********************************************************************************************************************/
+  @media only screen and (min-width: 1440px) {
+    /* container styling all pages */
+    /**********************************************************************************************************************/
+    .container {
+      width: 70%;
+    }
+  }
+  /* about page  ~ extra large devices */
+  /**********************************************************************************************************************/
+  main #aboutBanner picture img {
+    width: 70%;
   }
 }
