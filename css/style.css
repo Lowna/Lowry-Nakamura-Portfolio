@@ -98,6 +98,7 @@ a:hover,
 a:focus {
   color: #234261;
   text-decoration: underline; /* Underlining when hovering over a link */
+  transition: 0.5s ease-in-out;
 }
 a:active {
   /* selected link */
@@ -114,7 +115,7 @@ a:active {
   border: 1px solid #ffffff;
   padding: 5px 10px;
   margin-bottom: 5px;
-  transition: 0.2s opacity;
+  transition: 0.5s opacity;
 }
 .email-btn:hover,
 .email-btn:active {
@@ -128,7 +129,7 @@ a:active {
 .project-link:hover,
 .project-link:active {
   color: #234261;
-  transition: 0.2s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 #btnSubmit,
 #btnSubmit:active {
@@ -849,5 +850,57 @@ i:visited {
   /**********************************************************************************************************************/
   main #aboutBanner picture img {
     width: 70%;
+  }
+}
+
+/*animation*/
+#animationBackground {
+  width: 60%;
+  max-width: 100%;
+  height: auto;
+}
+#layer_1 {
+  background-color: #ff2a02;
+}
+.windmill {
+  animation-name: rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.cloud {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.cloud-1 {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+    /* origin: 951px 430px; */
+  }
+  100% {
+    transform: rotate(120deg);
+    /* transform-origin: 951px 430px; */
+  }
+}
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(-200px, 48px);
+  }
+  to {
+    transform: translate(0px, 48px);
   }
 }

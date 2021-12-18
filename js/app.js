@@ -11,3 +11,7 @@ toggleNav.addEventListener('click', function(e) {
     }
 })
 
+window.addEventListener('click', function(e) {
+console.log(e)
+
+})
