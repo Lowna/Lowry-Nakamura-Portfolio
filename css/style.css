@@ -299,6 +299,69 @@ p,
   font-weight: 500;
   margin-bottom: 25px;
 }
+/* animation page */
+/**********************************************************************************************************************/
+/*animation*/
+.cls-1 {
+  fill: #ee3524;
+}
+.cls-2 {
+  fill: #231f20;
+}
+#animationWindmill {
+  display: flex;
+  flex-direction: column;
+}
+#animationBackground {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+#animationBackground {
+  margin-bottom: 1em;
+}
+#windmill {
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.cloud {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.cloud-1 {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(-200px, 48px);
+  }
+  to {
+    transform: translate(0px, 48px);
+  }
+}
 /* about page */
 /**********************************************************************************************************************/
 main #aboutBanner {
@@ -747,6 +810,26 @@ i:visited {
   .project-container #finalScreensMuseo #MuseoScreens {
     padding: 2em;
   }
+  /* animation page ~ large devices */
+  /**********************************************************************************************************************/
+  main #animationWindmill {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  main #animationWindmill h1 {
+    flex-basis: 100%;
+    margin-bottom: 25px;
+  }
+  main #animationWindmill #animationBackground {
+    flex-basis: 60%;
+    padding: 1em;
+  }
+  main #animationWindmill .animation-description {
+    flex-basis: 40%;
+    align-self: center;
+    padding: 1em;
+  }
   /* home page ~ large devices */
   /**********************************************************************************************************************/
   #heroBanner picture img {
@@ -850,57 +933,5 @@ i:visited {
   /**********************************************************************************************************************/
   main #aboutBanner picture img {
     width: 70%;
-  }
-}
-
-/*animation*/
-#animationBackground {
-  width: 60%;
-  max-width: 100%;
-  height: auto;
-}
-#layer_1 {
-  background-color: #ff2a02;
-}
-.windmill {
-  animation-name: rotate;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-.cloud {
-  animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-.cloud-1 {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-    /* origin: 951px 430px; */
-  }
-  100% {
-    transform: rotate(120deg);
-    /* transform-origin: 951px 430px; */
-  }
-}
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(-200px, 48px);
-  }
-  to {
-    transform: translate(0px, 48px);
   }
 }
