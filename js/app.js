@@ -1,3 +1,6 @@
+// comment from console log
+console.log(`This Lowry Nakamura's Portfolio site`)
+
 // toggle nav
 let toggleNav = document.getElementById('showHide')
 toggleNav.addEventListener('click', function(e) {
