@@ -14,3 +14,6 @@ toggleNav.addEventListener('click', function(e) {
     }
 })
 
+// show back to top link
+
+let showTopScroll = document.getElementById('topUp')

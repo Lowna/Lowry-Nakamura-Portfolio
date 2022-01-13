@@ -467,6 +467,29 @@ footer .footer-container {
 .copy {
   margin-bottom: 10px;
 }
+.chat {
+  display: flex
+  flex-direction: column;
+}
+.contact-chat {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.top-btn-contain #topUp {
+  font-size: 3em;
+  text-align: right;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+.top-btn-contain #topUp.appear {
+  opacity: 1;
+} 
 .outside-links {
   font-size: 1.5rem;
 }
