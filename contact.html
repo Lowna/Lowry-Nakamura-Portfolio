@@ -74,7 +74,11 @@
           </p>
         </div>
         <div id="form">
-          <form action="https://formspree.io/f/xgekqble" method="POST">
+          <form
+            action="https://formspree.io/f/xgekqble"
+            method="POST"
+            id="formSubmit"
+          >
             <label for="name">Your Name</label>
             <br />
             <input
@@ -116,7 +120,14 @@
               cols="50"
             ></textarea>
             <br />
-            <input type="submit" id="btnSubmit" value="Submit" />
+            <input
+              data-sitekey="reCAPTCHA_site_key"
+              data-callback="onSubmit"
+              data-action="submit"
+              type="submit"
+              id="btnSubmit"
+              value="Submit"
+            />
           </form>
         </div>
       </div>
@@ -169,6 +180,12 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+      function onSubmit(token) {
+        document.getElementById("formSubmit").submit();
+      }
+    </script>
     <!-- end page content -->
   </body>
 </html>
