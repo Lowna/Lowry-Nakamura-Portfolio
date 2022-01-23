@@ -6,13 +6,13 @@ primary
 secondary
 #b4b4b4
 link
-#4381C1
+#3D79B8
 link hover
 #234261
 link active
-#E30004
+#FF8D77
 visited
-#4381C1
+#3D79B8
 */
 
 /* start style sheet */
@@ -92,22 +92,25 @@ img {
 /* links */
 a,
 a:visited {
-  color: #4381c1;
+  color: #3D79B8;
   text-decoration: none; /* No underlining */
 }
 a:hover,
 a:focus {
-  color: #234261;
+  color: #3D79B8;
   text-decoration: underline; /* Underlining when hovering over a link */
   transition: 0.5s ease-in-out;
 }
 a:active {
   /* selected link */
-  color: #ff2a02;
+  color: #FF8D77;
 }
 /* buttons and specific links */
 /**********************************************************************************************************************/
-
+.email-btn {
+  width: 30%;
+  margin: auto;
+}
 .email-btn,
 .email-btn:visited {
   display: inline-block;
@@ -171,7 +174,7 @@ a:active {
  margin: 0;
  padding: 0;
 }
-.up-contain #myBtn:hover, #myBtn: {
+.up-contain #myBtn:hover, #myBtn:active {
   color: #ffffff; /* Add a dark-grey background on hover */
 }
 /* header and nav */
@@ -346,6 +349,10 @@ p,
   margin-bottom: 1em;
 }
 #windmill {
+  animation-name: rotate ;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
   -webkit-animation-name: rotate;
   -webkit-animation-duration: 3s;
   -webkit-animation-iteration-count: infinite;
@@ -493,7 +500,7 @@ footer .footer-container {
   margin-bottom: 10px;
 }
 .chat {
-  display: flex
+  display: flex;
   flex-direction: column;
 }
 .contact-chat {
