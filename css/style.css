@@ -904,7 +904,7 @@ i:visited {
   /* about page  ~ large devices */
   /**********************************************************************************************************************/
   main #aboutBanner picture img {
-    width: 80%;
+    width: 60%;
   }
   #about main .container {
     flex-direction: row;
