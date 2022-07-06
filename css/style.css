@@ -397,7 +397,7 @@ p,
 /* about page */
 /**********************************************************************************************************************/
 main #aboutBanner {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   margin-bottom: 25px;
 }
@@ -411,7 +411,7 @@ picture {
   display: block;
 }
 main #aboutBanner picture img {
-  width: 100%;
+  width: 60%;
 }
 #about main .container {
   display: flex;
